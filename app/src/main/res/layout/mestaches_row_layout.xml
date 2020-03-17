@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+<FrameLayout
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:id="@+id/frame"
+    >
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:progress="100"
+        style="?android:progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/circle2" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        style="?android:progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/circle"
+        android:id="@+id/progTach"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/percentTach"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+</FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/frame"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/infoLayout"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/titreTask"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/editTach"
+            android:src="@drawable/editache"
+            android:layout_alignParentRight="true"
+            />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/startTach"
+                android:src="@drawable/starticon"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/editLayout"
+            android:layout_toRightOf="@id/frame"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/saveprog"
+                android:src="@drawable/saveprog"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/canprog"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/saveprog"
+                        android:id="@+id/cancprog"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:id="@+id/seekbar"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadow"
+        />
+
+</LinearLayout>

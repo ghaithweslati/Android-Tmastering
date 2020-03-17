@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Ticket">
+        <menu>
+            <item
+                android:id="@+id/nav_new"
+                android:icon="@drawable/nouveau"
+                android:title="Nouveau" />
+            <item
+                android:id="@+id/nav_att"
+                android:icon="@drawable/atten"
+                android:title="Attendues" />
+            <item
+                android:id="@+id/nav_cour"
+                android:icon="@drawable/encours"
+                android:title="En cours" />
+            <item
+                android:id="@+id/nav_clo"
+                android:icon="@drawable/done"
+                android:title="Clôturés" />
+        </menu>
+    </item>
+
+</menu>

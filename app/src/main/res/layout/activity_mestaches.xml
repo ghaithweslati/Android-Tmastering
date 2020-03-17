@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_activite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#E6E6E6"
+    tools:context="com.example.hp.tmastering.MesTachesActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lstAct"
+        android:scrollbars="none"
+        android:dividerHeight="17.0sp"
+        android:divider="@android:color/transparent"
+        >
+    </ListView>
+
+</RelativeLayout>

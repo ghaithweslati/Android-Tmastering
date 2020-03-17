@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="+"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:src="@drawable/folder"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:id="@+id/imgMod"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="GHAItH"
+            android:textColor="@color/black"
+            android:id="@+id/nomModule"
+            android:layout_toRightOf="@id/imgMod"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/settingModule"
+            android:src="@drawable/menu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadow"
+        />
+
+</LinearLayout>

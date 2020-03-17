@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modifier_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.tmastering.AjouterUserActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="?attr/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/backProf"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENREGISTRER"
+            android:textSize="15dp"
+            android:id="@+id/saveProf"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:background="#ffffff">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/projIcon"
+                android:src="@drawable/id"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identification"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/projIcon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addNom"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                android:hint="LOGIN"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPrenom"
+                android:layout_below="@id/addNom"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                android:hint="NOM"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addLogin"
+                android:layout_below="@id/addPrenom"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                android:hint="PRENOM"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/descTickIcon"
+                android:src="@drawable/password"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mot de passe "
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/descTickIcon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPassword1"
+                android:password="true"
+                android:hint="******"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPassword2"
+                android:password="true"
+                android:hint="******"
+                android:layout_below="@id/addPassword1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/urgIcon"
+                android:src="@drawable/contact"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:id="@+id/urgTitle"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/urgIcon" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/addEmail"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                android:hint="EMAIL"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addTel"
+                android:hint="TEL"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:layout_below="@+id/addEmail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="45dp"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addAdresse"
+                android:layout_below="@id/addTel"
+                android:textColor="@color/black"
+                android:layout_marginLeft="45dp"
+                android:hint="ADRESSE"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/raisonLayout"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/urgInfo"
+                    android:src="@drawable/role"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profession"
+                    android:id="@+id/infoTitle"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/urgInfo" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:id="@+id/radioGroup"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Client"
+                        android:id="@+id/radClt"
+                        android:checked="true"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Operateur"
+                        android:id="@+id/radOp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chef de projet"
+                        android:id="@+id/radChef"
+                        />
+                </RadioGroup>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addRaison"
+                    android:layout_below="@+id/radioGroup"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="45dp"
+                    android:hint="RAISON SOCIAL"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/lstFonc"
+                    android:layout_below="@+id/radioGroup"
+                    >
+                </Spinner>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/etatLayout"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/etatIcon"
+                android:src="@drawable/etat"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etat"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/etatLabel"
+                android:layout_toRightOf="@+id/etatIcon" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etatSwitch"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/etatLabel"
+                android:layout_marginLeft="20dp"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/capIcon"
+                android:src="@drawable/profilicon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo de profil"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/capIcon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/imageProf"
+                android:gravity="top"
+                android:textSize="15dp"
+                android:background="@drawable/uploader"
+                android:textColor="#000000"
+                android:layout_marginLeft="45dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

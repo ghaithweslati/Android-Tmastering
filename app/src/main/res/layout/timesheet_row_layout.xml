@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/joursTime"
+                android:textSize="25dp"
+                android:text="22"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/moisTime"
+                android:textSize="15dp"
+                android:text="Mar."
+                android:textColor="#000000"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_ciel"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:id="@+id/nomTachTime"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        />
+
+</LinearLayout>
+

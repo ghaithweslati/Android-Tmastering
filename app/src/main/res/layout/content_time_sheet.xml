@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_time_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.tmastering.TimeSheetActivity"
+    tools:showIn="@layout/app_bar_time_sheet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barlayout"
+        android:layout_alignParentBottom="true"
+        >
+        <include
+            layout="@layout/bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dropLayout">
+        <Spinner
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstOp"
+            ></Spinner>
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="220dp"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="@color/white"
+            app:compactCalendarTextColor="@color/black"
+            app:compactCalendarCurrentDayBackgroundColor="@color/white"
+            app:compactCalendarCurrentDayTextColor="@color/blue"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/blue"
+            app:compactCalendarCurrentSelectedDayTextColor="@color/white"
+            app:compactCalendarMultiEventIndicatorColor="@color/blue"
+            />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/lstTaches"
+            android:scrollbars="none"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="25.0sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vous n'aver pas des tâches à faire !"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/alertDispo"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropLayout"
+        android:layout_above="@id/barlayout"
+        >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/lstAct"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="25.0sp"
+        >
+    </ListView>
+    </RelativeLayout>
+</RelativeLayout>
